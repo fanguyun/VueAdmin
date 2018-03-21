@@ -1,0 +1,128 @@
+body {
+  padding: 0px;
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  font: 14px Helvetica Neue, Helvetica, PingFang SC, \5fae\8f6f\96c5\9ed1,
+    Tahoma, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  color: #2c3e50;
+}
+
+//home.vue
+.el-menu-item,
+.el-submenu__title {
+  color: #fff;
+  background-color: #20262e;
+  font-weight: 800;
+}
+
+.el-menu .el-menu-item,
+.el-submenu .el-submenu__title {
+  height: 56px;
+  line-height: 56px;
+  background-color: #20262e !important;
+  span {
+    opacity: 0.8;
+  }
+}
+
+.el-menu--inline {
+  .el-menu-item {
+    line-height: 42px !important;
+    height: 42px !important;
+  }
+}
+.el-menu-item:hover,
+.el-submenu .el-menu-item:hover,
+.el-submenu__title:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.is-opened {
+  background-color: #20262e !important;
+  .el-menu-item {
+    line-height: 42px !important;
+    height: 42px !important;
+  }
+}
+.el-submenu .el-menu-item {
+  background-color: #20262e;
+}
+
+.el-submenu .el-menu-item:hover {
+  background-color: #20262e;
+}
+
+.el-submenu .el-menu-item.is-active,
+.el-menu-item.is-active,
+.el-submenu .el-menu-item.is-active:hover,
+.el-menu-item.is-active:hover {
+  border-left: 3px solid #409eff;
+}
+.el-menu--popup {
+  background-color: #20262e;
+  .el-menu-item {
+    line-height: 42px;
+    height: 42px;
+    font-weight: normal;
+  }
+}
+
+.el-menu .iconfont {
+  margin-right: 8px;
+}
+
+.warp-breadcrum {
+  border-left: 3px solid #409eff;
+  margin: 15px 10px 15px 10px;
+  text-indent: 8px;
+}
+.el-table td,
+.el-table th {
+  padding: 6px 0;
+}
+.oa_main {
+  .oa_search {
+    margin: 20px 10px 10px 10px;
+  }
+}
+.ql-toolbar.ql-snow .ql-formats {
+  margin-right: 0 !important;
+}
+.ql-toolbar.ql-snow .ql-formats:nth-child(4),
+.ql-toolbar.ql-snow .ql-formats:nth-child(8),
+.ql-toolbar.ql-snow .ql-formats:nth-child(9) {
+  display: none;
+}
+.ql-snow .ql-toolbar button svg,
+.quillWrapper .ql-snow.ql-toolbar button svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+.ql-snow .ql-picker-label:before {
+  position: absolute;
+}
+.editer {
+  .ql-picker.ql-color-picker svg {
+    width: 16px !important;
+    height: 16px !important;
+    position: absolute;
+  }
+}
+.quillWrapper .ql-snow.ql-toolbar .ql-formats {
+  margin-bottom: 0 !important;
+}
+.quillWrapper .ql-snow.ql-toolbar {
+  padding-top: 10px !important;
+  padding-bottom: 0px !important;
+}
+.ql-picker:not(.ql-background) {
+  top: 0 !important;
+}
