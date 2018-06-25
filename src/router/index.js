@@ -28,6 +28,8 @@ import UserList from '@/components/user/list';
 import UserChangePwd from '@/components/user/changepwd';
 import UserProfile from '@/components/user/profile';
 
+import Drage from '@/components/Drage'
+
 // 懒加载方式，当路由被访问的时候才加载对应组件
 const Login = resolve => require(['@/components/Login'], resolve);
 
@@ -40,6 +42,11 @@ let router = new Router({
       path: '/login',
       name: '登录',
       component: Login
+    },
+    {
+      path: '/D3',
+      name: 'D3',
+      component: Drage
     },
     {
       path: '/',
