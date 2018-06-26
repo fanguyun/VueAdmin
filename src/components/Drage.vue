@@ -32,11 +32,9 @@ export default {
           description: "represents waiting for a connection request from any " +
                        "remote TCP and port."
         },
-        是否会签: {},
         办公室修审: {},
         关联处室审批1: {},
         关联处室审批2: {},
-        是否补充会签: {},
         签发: {},
         登记放号: {},
         文印室: {},
@@ -54,17 +52,15 @@ export default {
       });
 
       // Set up the edges
-      g.setEdge("开始", "公文发行", { label: "open" });
+      g.setEdge("开始", "公文发行", { label: "" });
       g.setEdge("公文发行", "处长审核", { label: "" });
       g.setEdge("处长审核", "公文发行", { label: "驳回" });
-      g.setEdge("处长审核", "是否会签", { label: "" });
-      g.setEdge("是否会签", "关联处室审批1", { label: "是" });
-      g.setEdge("是否会签", "办公室修审", { label: "否" });
-      g.setEdge("办公室修审", "是否补充会签", { label: "" });
+      g.setEdge("处长审核", "关联处室审批1", { label: "会签" });
+      g.setEdge("处长审核", "办公室修审", { label: "不会签" });
       g.setEdge("办公室修审", "公文发行", { label: "驳回" });
       g.setEdge("关联处室审批1", "办公室修审", { label: "" });
-      g.setEdge("是否补充会签", "签发", { label: "否" });
-      g.setEdge("是否补充会签", "关联处室审批2", { label: "是" });
+      g.setEdge("办公室修审", "签发", { label: "不补充会签" });
+      g.setEdge("办公室修审", "关联处室审批2", { label: "补充会签" });
       g.setEdge("签发", "办公室修审", { label: "驳回" });
       g.setEdge("关联处室审批2", "签发", { label: "" });
       g.setEdge("签发", "登记放号", { label: "" });
