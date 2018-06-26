@@ -131,7 +131,6 @@ export default {
       var styleTooltip = function(name, description) {
         return "<p class='name'>" + name + "</p><p class='description'>" + description + "</p>";
       };
-
       // Run the renderer. This is what draws the final graph.
       render(inner, g);
 
