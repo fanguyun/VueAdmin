@@ -7,7 +7,8 @@
   "scripts": {
     "server": "node server/bin/www",
     "dev": "node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "deploy.sh"
   },
   "dependencies": {
     "axios": "^0.16.2",
