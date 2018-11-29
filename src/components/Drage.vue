@@ -1,9 +1,10 @@
 <template>
   <div id="main" ref="main">
-    <svg width=960 height=900></svg>
+    <svg width=500 height=1000></svg>
   </div>
 </template>
 <script>
+// import $ from 'jquery'
 export default {
   name: 'Main',
   mounted() {
@@ -106,7 +107,7 @@ export default {
 </script>
 <style lang="scss">
 #main{
-  width:100%;
+  width:300px;
   height:1500px;
 }
 text {
